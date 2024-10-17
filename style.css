@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: 0;
+  user-select: none;
+}
+
+mark{
+  background:  linear-gradient(50deg, #d96523, #ff9100);
+}
+
+body{
+  background-color: rgb(247, 247, 247);
+  color: white;
+}
+
+header{
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo{
+  width: 250px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img{
+  width: 70px;
+}
+
+nav{
+  width: 400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul{
+  width: 370px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  width: 300px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  width: 100px;
+  text-decoration: none;
+  color: #ff9100;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+}
+
+
+nav a::after {
+  content: '';
+  width: 90%;
+  height: 3px;
+  background: linear-gradient(50deg, #d96523, #ff9100);
+  position: absolute;
+  border-radius: 5px;
+  top: 25px;
+  left: 6px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.button-nav{
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-nav a{
+  text-decoration: none;
+  color: #ff9100;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-nav button{
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+  padding: 5px;
+  background: linear-gradient(to right, #d96526, #ff9100);
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.button-nav button:hover{
+    transform: translateY(-4px)
+}
+
+
+section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 90%;
+  height: 500px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-direction: column;
+  background: rgba(204, 204, 204, 0.299);
+  border: 1px solid rgba(64, 64, 64, 0.123);
+}
+
+.container .top-cont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .access{
+
+} */
+
+.access a{
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #ff9100;
+  font-weight: 500;
+}
+
+.container .top-cont article{
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+}
+
+.container .top-cont article h1{
+  color: #d96526;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+}
+
+.container .top-cont article p{
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.container .top-cont article p mark{
+    padding: 2px;
+}
+
+span{
+  color: #ff9100;
+}
+
+.art-button{
+    width: 100%;
+    display: flex;
+    align-items: right;
+}
+.art-button button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 7px;
+    font-size: 15px;
+    padding: 5px;
+    background: linear-gradient(to right, #d96526, #ff9100);
+    color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.art-button button:hover{
+    transform: translateY(-4px)
+}
+.art-button button i{
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+ .linktree button {
+  background: transparent;
+  border: 1px solid #ff9100;
+  transition: 0.7s;
+  color: #ff9100;  
+}
+/*
+.linktree button:hover {
+  background:  #ff9100;
+  border:none;
+  color: black;
+}
+ */
+.container .top-cont img{
+  width: 400px;
+}
+
+.container .top-cont aside{
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.s1{
+  display: flex;
+  align-items: start;
+}
+
+footer{
+    background: #252525;
+    border: 1px solid rgba(105, 105, 105, 0.123);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 40px;
+}
+
+footer .contacts a button{
+    color: #af4d18;
+    background: transparent;
+    border: none;
+}
+
+footer .paragraph p{
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.menu-icon i{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  display: none;
+}
+/* ESTILO DO MENU MOBILE */
+
+.menu-mobile{
+  background: #d96523;
+  height: 50vh;
+  width: 0%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  transition: .3s;
+}
+
+.menu-mobile.abrir-menu{
+  width: 100%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay{
+  display: block;
+}
+
+.menu-mobile .btn-fechar{
+  padding: 20px 5%;
+}
+.menu-mobile .btn-fechar i{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.menu-mobile nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-mobile nav ul li.nav-item a {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block; 
+  transition: .3s;
+}
+
+.menu-mobile ul li.nav-item a:hover{
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+.overlay{
+  background-color: #000000a8;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 888;
+  display: none;
+}
+
+.menu-mobile nav ul li.nav-item .button-nav button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+  padding: 5px;
+  background: linear-gradient(to right, #d96526, #ff9100);
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.menu-mobile ul li.nav-item .button-nav button:hover{
+  transform: translateY(-4px)
+}
+
+/* ESTILO DO MENU MOBILE */
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  header nav{
+    display: none;
+}
+  header .logo{
+    width: 80px;
+    height: 70px;
+}
+  header .button-nav{
+    display: none;
+}
+.menu-icon i{
+  display: block;
+  color: #d96526;
+}
+.container{
+  flex-direction: column;
+  height: 650px;
+}
+.container .top-cont{
+  flex-direction: column;
+  width: 100%;
+  
+}
+.container .top-cont article{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+.container .top-cont article h1{
+  font-size: 30px;
+}
+.container .top-cont article p{
+  font-size: 10px;
+}
+.container .top-cont aside{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+
+.art-button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.art-button button{
+  width: 150px;
+}
+.container .top-cont aside img{
+  width: 200px;
+}
+}
+/* MOBILE */
